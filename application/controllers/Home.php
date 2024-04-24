@@ -6,7 +6,7 @@ class Home extends CI_Controller {
         $user = $this->session->userdata('user');
 
         $data = array();
-        $data['page'] = "home";
+        $data['page'] = "simulation";
 
         if (!$user) {
             $data['page'] = "login";

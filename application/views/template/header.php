@@ -10,7 +10,7 @@
                     <a href="<?php echo base_url("home"); ?>">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="<?php echo base_url("simulation"); ?>">Simulations</a>
+                    <a href="<?php echo base_url("simulation/simulation_form"); ?>">Simulations</a>
                 </li>
                 <li class="nav__item">
                     <a href="<?php echo base_url("logincontroller/login_form"); ?>">Login</a>

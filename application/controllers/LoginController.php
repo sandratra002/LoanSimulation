@@ -17,8 +17,8 @@ class LoginController extends CI_Controller {
         } else {
             $data['error'] = "An error has occured";
             $data['page'] = "login";
+            $this->load->view("template", $data);
         }
-        $this->load->view("template", $data);
     }
 
     public function signup () {
