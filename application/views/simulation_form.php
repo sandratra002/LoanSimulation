@@ -1,6 +1,6 @@
-<a href="<?php echo base_url("simulation/simulation_list");  ?>">See all simulation</a>
+<a href="<?php echo base_url("simulationcontroller/simulation_list");  ?>">See all simulation</a>
 
-<form action="<?php echo base_url("simulation/simulate");  ?>" class="form" method="post" id="login-form">
+<form action="<?php echo base_url("simulationcontroller/simulate");  ?>" class="form" method="post" id="login-form">
     <h1 class="form__title">Simulation</h1>
 
     <hr class="form__sep">
@@ -9,7 +9,7 @@
         <div class="form__input vertical">
             <label for="login-email" class="form__label">Amount:</label>
 
-            <input required type="number" name="email" id="login-email" class="form__input-field" value="" placeholder="" />
+            <input required type="number" name="amount" id="login-email" class="form__input-field" value="" placeholder="" />
         </div>
 
         <div class="form__input vertical">
@@ -21,7 +21,7 @@
             <div class="form__input vertical">
                 <label for="start_date" class="form__label">StartDate:</label>
 
-                <input required type="number" name="start_date" id="start_date" class="form__input-field" value="" placeholder="" />
+                <input required type="date" name="start_date" id="start_date" class="form__input-field" value="" placeholder="" />
             </div>
             <div class="form__input vertical">
                 <label for="duration" class="form__label">Duration:</label>
