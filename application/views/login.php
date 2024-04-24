@@ -7,17 +7,15 @@
         <div class="form__input vertical">
             <label for="login-email" class="form__label">Email:</label>
 
-            <input required type="email" name="email" id="login-email" class="form__input-field" value="<%= map.get("email") %>" placeholder="" />
+            <input required type="email" name="email" id="login-email" class="form__input-field" value="" placeholder="" />
         </div>
 
         <div class="form__input vertical">
             <label for="login-password" class="form__label">Password:</label>
 
-            <input required type="password" name="password" id="login-password" class="form__input-field" value="<%= map.get("password") %>" placeholder="" />
+            <input required type="password" name="password" id="login-password" class="form__input-field" value="" placeholder="" />
         </div>
     </div>
-    <input required type="hidden" name="page" value="<%= request.getContextPath() %>">
-    <input required type="hidden" name="mode" value="login">
 
     <input type="submit" value="Submit" class="form__submit btn" />
 </form>
