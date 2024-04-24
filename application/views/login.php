@@ -1,4 +1,4 @@
-<form action="./login" class="form" method="post" id="login-form">
+<form action="<?php echo base_url("logincontroller/login");  ?>" class="form" method="post" id="login-form">
     <h1 class="form__title">Login</h1>
 
     <hr class="form__sep">
@@ -18,4 +18,5 @@
     </div>
 
     <input type="submit" value="Submit" class="form__submit btn" />
+    <a style="text-align: center;"  href="<?php echo base_url("logincontroller/signup"); ?>"> Sign up?</a>
 </form>
