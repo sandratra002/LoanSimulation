@@ -115,3 +115,12 @@ body.inactive::after {
 .message.message__success {
     color: var(--clr-success);
 }
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}

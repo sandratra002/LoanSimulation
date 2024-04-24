@@ -36,4 +36,8 @@
         </div>
     </div>
     <input type="submit" value="Submit" class="form__submit btn" />
+    <?php if (isset($error)){ ?>
+        <p class="error"><?php echo $error;?></p>
+    <?php  } ?> 
+    <a style="text-align: center;"  href="<?php echo base_url("logincontroller/login_form"); ?>"> Login?</a>
 </form>

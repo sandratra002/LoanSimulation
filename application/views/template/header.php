@@ -2,7 +2,7 @@
     <div class="header__logo">
         <h1><a href="/Motorpedia">Loan Simulation</a></h1>
     </div>
-    
+
     <div class="header__section">
         <nav class="heaver__nav nav">
             <ul class="">
@@ -10,13 +10,16 @@
                     <a href="<?php echo base_url("home"); ?>">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="<?php echo base_url("home"); ?>">Simulations</a>
+                    <a href="<?php echo base_url("simulation"); ?>">Simulations</a>
                 </li>
                 <li class="nav__item">
-                    <a href="<?php echo base_url("logincontroller/login"); ?>">Login</a>
+                    <a href="<?php echo base_url("logincontroller/login_form"); ?>">Login</a>
                 </li>
                 <li class="nav__item">
-                    <a href="<?php echo base_url("logincontroller/signup"); ?>">Signup</a>
+                    <a href="<?php echo base_url("logincontroller/signup_form"); ?>">Signup</a>
+                </li>
+                <li class="nav__item">
+                    <a href="<?php echo base_url("logincontroller/logout"); ?>">Logout</a>
                 </li>
             </ul>
         </nav>

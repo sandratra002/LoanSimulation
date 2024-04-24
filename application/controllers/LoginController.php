@@ -9,12 +9,16 @@ class LoginController extends CI_Controller {
 
         $user = $this->user->login ($email, $password);
 
+        $data = array();
+        $data['page'] = "home";
+
         if ($user ) {
-            var_dump($user);
-            echo "Logged in";
+            $this->session->set_userdata("user", $user);
         } else {
-            echo "Not logged";
+            $data['error'] = "An error has occured";
+            $data['page'] = "login";
         }
+        $this->load->view("template", $data);
     }
 
     public function signup () {
@@ -29,11 +33,32 @@ class LoginController extends CI_Controller {
         $user['email'] = $this->input->post("email");
 
         $result = $this->user->signup($user);
+        $data = array();
+        $data["page"] = "home";
+
         if ($result) {
-            var_dump($result);
-            echo "Signed up";
+            $this->session->set_userdata("user", $result);
         } else {
-            echo "Not signed up";
+            $data['error'] = "An error has occured";
+            $data["page"] = "signup";
         }
+        $this->load->view("template", $data);
+    }
+
+    public function logout () {
+        $this->session->sess_destroy();
+        $this->login_form();
+    }
+
+    public function login_form () {
+        $data = array();
+        $data["page"] = "login";
+        $this->load->view("template", $data);
+    }
+
+    public function signup_form () {
+        $data = array();
+        $data["page"] = "signup";
+        $this->load->view("template", $data);
     }
 }

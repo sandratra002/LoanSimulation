@@ -3,9 +3,17 @@
 class Home extends CI_Controller {
     public function index() {
 
-        $data = array();
+        $user = $this->session->userdata('user');
 
-        $data['page'] = "signup";
+        $data = array();
+        $data['page'] = "home";
+
+        if (!$user) {
+            $data['page'] = "login";
+            $data['error'] = "You must login first";
+        } else {
+            // $data['']
+        }
 
         $this->load->view("template", $data);
     }

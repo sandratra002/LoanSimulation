@@ -18,5 +18,8 @@
     </div>
 
     <input type="submit" value="Submit" class="form__submit btn" />
-    <a style="text-align: center;"  href="<?php echo base_url("logincontroller/signup"); ?>"> Sign up?</a>
+    <?php if (isset($error)){ ?>
+        <p class="error"><?php echo $error;?></p>
+    <?php  } ?> 
+    <a style="text-align: center;"  href="<?php echo base_url("logincontroller/signup_form"); ?>"> Sign up?</a>
 </form>
