@@ -1,0 +1,23 @@
+<form action="./login" class="form disabled" method="post" id="login-form">
+    <h1 class="form__title">Login</h1>
+
+    <hr class="form__sep">
+
+    <div class="form__content">
+        <div class="form__input vertical">
+            <label for="login-email" class="form__label">Email:</label>
+
+            <input required type="email" name="email" id="login-email" class="form__input-field" value="<%= map.get("email") %>" placeholder="" />
+        </div>
+
+        <div class="form__input vertical">
+            <label for="login-password" class="form__label">Password:</label>
+
+            <input required type="password" name="password" id="login-password" class="form__input-field" value="<%= map.get("password") %>" placeholder="" />
+        </div>
+    </div>
+    <input required type="hidden" name="page" value="<%= request.getContextPath() %>">
+    <input required type="hidden" name="mode" value="login">
+
+    <input type="submit" value="Submit" class="form__submit btn" />
+</form>
