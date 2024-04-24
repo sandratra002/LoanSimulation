@@ -7,13 +7,16 @@
         <nav class="heaver__nav nav">
             <ul class="">
                 <li class="nav__item">
-                    <a href="./home">Home</a>
+                    <a href="<?php echo base_url("home"); ?>">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="./about">Simulations</a>
+                    <a href="<?php echo base_url("home"); ?>">Simulations</a>
                 </li>
                 <li class="nav__item">
-                    <a href="./list-review">Login</a>
+                    <a href="<?php echo base_url("logincontroller/login"); ?>">Login</a>
+                </li>
+                <li class="nav__item">
+                    <a href="<?php echo base_url("logincontroller/signup"); ?>">Signup</a>
                 </li>
             </ul>
         </nav>
