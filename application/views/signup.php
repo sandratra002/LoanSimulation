@@ -13,7 +13,7 @@
             <div class="form__input vertical">
                 <label for="first-name" class="form__label">First name:</label>
 
-                <input required type="text" name="first-name" id="first-name" class="form__input-field" value="" placeholder="" />
+                <input required type="text" name="first_name" id="first-name" class="form__input-field" value="" placeholder="" />
             </div>
         </div>
         <div class="form__input vertical">
@@ -29,9 +29,9 @@
                 <input required type="password" name="password" id="password" class="form__input-field" value="" placeholder="" />
             </div>
             <div class="form__input vertical">
-                <label for="confirm-password" class="form__label">Confirm Password:</label>
+                <label for="confirm_password" class="form__label">Confirm Password:</label>
 
-                <input required type="password" name="confirm-password" id="confirm-password" class="form__input-field" value="" placeholder="" />
+                <input required type="password" name="confirm_password" id="confirm-password" class="form__input-field" value="" placeholder="" />
             </div>
         </div>
     </div>

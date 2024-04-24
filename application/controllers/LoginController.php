@@ -25,9 +25,10 @@ class LoginController extends CI_Controller {
         $user['name'] = $this->input->post("name");
         $user['first_name'] = $this->input->post("first_name");
         $user['password'] = $this->input->post("password");
-        $user['email'] = $this->input->post("name");
+        $user['confirm_password'] = $this->input->post("confirm_password");
+        $user['email'] = $this->input->post("email");
 
-        $result = $this->user->signup ($user);
+        $result = $this->user->signup($user);
         if ($result) {
             var_dump($result);
             echo "Signed up";

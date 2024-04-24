@@ -5,7 +5,7 @@ class Home extends CI_Controller {
 
         $data = array();
 
-        $data['page'] = "login";
+        $data['page'] = "signup";
 
         $this->load->view("template", $data);
     }
