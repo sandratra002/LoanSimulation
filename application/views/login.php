@@ -1,4 +1,4 @@
-<form action="./login" class="form disabled" method="post" id="login-form">
+<form action="./login" class="form" method="post" id="login-form">
     <h1 class="form__title">Login</h1>
 
     <hr class="form__sep">
